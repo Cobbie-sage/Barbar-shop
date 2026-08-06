@@ -335,3 +335,26 @@ window.onload=function(){
     },1000);
 
 };
+// HAMBURGER MENU
+
+const menuToggle = document.getElementById("menu-toggle");
+
+const navMenu = document.getElementById("nav-menu");
+
+
+menuToggle.addEventListener("click",()=>{
+
+navMenu.classList.toggle("active");
+
+
+if(navMenu.classList.contains("active")){
+
+menuToggle.innerHTML='<i class="fa-solid fa-xmark"></i>';
+
+}else{
+
+menuToggle.innerHTML='<i class="fa-solid fa-bars"></i>';
+
+}
+
+});
