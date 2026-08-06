@@ -345,16 +345,25 @@ nav a:hover{
         grid-template-columns:1fr;
     }
 
-    form{
-        width:100%;
-    }
+   form{
+    max-width:700px;
+    width:90%;
+    margin:0 auto;
+}
 
-    input,
-    select,
-    textarea,
-    button{
-        width:100%;
-    }
+input,
+select,
+textarea{
+    width:100%;
+    padding:15px;
+    box-sizing:border-box;
+}
+
+button{
+    width:220px;
+    display:block;
+    margin:20px auto;
+}
 
 
 
