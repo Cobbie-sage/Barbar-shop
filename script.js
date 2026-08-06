@@ -358,3 +358,5 @@ menuToggle.innerHTML='<i class="fa-solid fa-bars"></i>';
 }
 
 });
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
