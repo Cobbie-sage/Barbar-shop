@@ -238,9 +238,13 @@ nav a:hover{
     transform:scale(1.04);
 }
 
-.barber img{
+
+    .barber img{
     height:350px;
-    object-fit:cover;
+    width:100%;
+    object-fit:contain;
+    background:#111;
+
 }
 
 .barber h3{
