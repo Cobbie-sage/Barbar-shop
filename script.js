@@ -125,9 +125,45 @@ window.addEventListener("scroll",()=>{
 // SCROLL TO TOP BUTTON
 // ===============================
 
+// ===============================
+// MODERN BACK TO TOP BUTTON
+// ===============================
+
 const topButton = document.createElement("button");
 
-topButton.innerHTML = "↑";
+topButton.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
+
+topButton.className = "top-btn";
+
+document.body.appendChild(topButton);
+
+
+window.addEventListener("scroll", ()=>{
+
+    if(window.scrollY > 400){
+
+        topButton.classList.add("show");
+
+    }else{
+
+        topButton.classList.remove("show");
+
+    }
+
+});
+
+
+topButton.addEventListener("click",()=>{
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+});
 
 document.body.appendChild(topButton);
 
